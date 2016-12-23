@@ -1,0 +1,17 @@
+{
+  "name": "base64-utf8",
+  "description": "无依赖utf8字符base64编解码模块，可安全用于微信小程序",
+  "main": "dist/base64.js",
+  "authors": [
+    "Vilien"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/vilien/base64-utf8",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
