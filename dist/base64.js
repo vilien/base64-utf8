@@ -1,4 +1,4 @@
-;(function(){
+;(function(root){
 
   var charMap = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
 
@@ -59,9 +59,21 @@
     }
   }
 
-  module.exports = {
+  var base64 = {
     encode: enc,
     decode: dec
   };
 
-})();
+  if (typeof define === 'function' && define.amd) {
+    define(function() {
+      return base64;
+    });
+  } else if (typeof exports === 'object') {
+    for (var key in base64) {
+      base64.hasOwnProperty(key) && (exports[key] = base64[key]);
+    }
+  } else {
+    root.base64 = base64;
+  }
+
+})(typeof global === 'object' && global || this);
