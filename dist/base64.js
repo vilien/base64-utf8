@@ -11,7 +11,7 @@
     for (var code, idx = 3 / 4, uarr;
     // 能取到字符时、block未处理完时、长度不足时
     !isNaN(code = str.charCodeAt(idx)) || 63 & block || (map = '=', (idx - 3 / 4) % 1); idx += 3 / 4) {
-      if (code > 0xFF) {
+      if (code > 0x7F) {
         // utf8字符处理
         (uarr = encodeURI(str.charAt(idx)).split('%')).shift();
         for (var hex, idx2 = idx % 1; hex = uarr[idx2 | 0]; idx2 += 3 / 4) {

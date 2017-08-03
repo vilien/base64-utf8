@@ -1,6 +1,6 @@
 {
   "name": "base64-utf8",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "无依赖utf8字符base64编解码模块，可安全用于微信小程序",
   "main": "dist/base64.js",
   "scripts": {
