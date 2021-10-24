@@ -8,3 +8,5 @@ package-lock.json
 
 # log
 *.log
+
+.DS_Store
