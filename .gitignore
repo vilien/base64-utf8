@@ -1,5 +1,10 @@
+# product
+es
+dist
+
 # Dependency directories
 node_modules
+package-lock.json
 
+# log
 *.log
-#dist/

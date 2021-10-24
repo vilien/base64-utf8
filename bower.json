@@ -12,7 +12,8 @@
     "node_modules",
     "bower_components",
     "src",
+    "es",
     "package.json",
-    "gulpfile.js"
+    "build"
   ]
 }
